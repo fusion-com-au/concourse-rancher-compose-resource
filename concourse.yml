@@ -3,7 +3,7 @@ resources:
 - name: repo
   type: git
   source:
-    uri: https://bitbucket.org/fusion-com-au/concourse-rancher-compose-resource
+    uri: https://github.com/fusion-com-au/concourse-rancher-compose-resource
     branch: master
 
 - name: image

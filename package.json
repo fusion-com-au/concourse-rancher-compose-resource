@@ -1,7 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "test": "node -c *.js"
+    "test": "node -c *.js",
+    "ci:login": "fly login concourse.rancher.fusion.one --target main --team-name dev-ops",
+    "ci:set": "cross-var fly set-pipeline --target main --pipeline concourse-rancher-compose-resource --config ./concourse.yml -l $HOME/.concourse/credentials.yaml"
   },
   "dependencies": {
     "js-yaml": "^3.6.0"
